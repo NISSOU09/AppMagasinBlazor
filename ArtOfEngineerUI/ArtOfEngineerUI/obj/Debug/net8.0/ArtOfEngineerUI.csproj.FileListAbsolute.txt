@@ -160,3 +160,12 @@ E:\stage\AppMagasin\ArtOfEngineerUI\ArtOfEngineerUI\obj\Debug\net8.0\refint\ArtO
 E:\stage\AppMagasin\ArtOfEngineerUI\ArtOfEngineerUI\obj\Debug\net8.0\ArtOfEngineerUI.pdb
 E:\stage\AppMagasin\ArtOfEngineerUI\ArtOfEngineerUI\obj\Debug\net8.0\ArtOfEngineerUI.genruntimeconfig.cache
 E:\stage\AppMagasin\ArtOfEngineerUI\ArtOfEngineerUI\obj\Debug\net8.0\ref\ArtOfEngineerUI.dll
+E:\stage\AppMagasin\ArtOfEngineerUI\ArtOfEngineerUI\bin\Debug\net8.0\Common.Logging.dll
+E:\stage\AppMagasin\ArtOfEngineerUI\ArtOfEngineerUI\bin\Debug\net8.0\Common.Logging.Core.dll
+E:\stage\AppMagasin\ArtOfEngineerUI\ArtOfEngineerUI\bin\Debug\net8.0\System.Net.IPNetwork.dll
+E:\stage\AppMagasin\ArtOfEngineerUI\ArtOfEngineerUI\bin\Debug\net8.0\Makaretu.Dns.dll
+E:\stage\AppMagasin\ArtOfEngineerUI\ArtOfEngineerUI\bin\Debug\net8.0\Makaretu.Dns.Multicast.dll
+E:\stage\AppMagasin\ArtOfEngineerUI\ArtOfEngineerUI\bin\Debug\net8.0\SimpleBase.dll
+E:\stage\AppMagasin\ArtOfEngineerUI\ArtOfEngineerUI\bin\Debug\net8.0\runtimes\linux-arm\lib\netstandard2.0\Tmds.LibC.dll
+E:\stage\AppMagasin\ArtOfEngineerUI\ArtOfEngineerUI\bin\Debug\net8.0\runtimes\linux-arm64\lib\netstandard2.0\Tmds.LibC.dll
+E:\stage\AppMagasin\ArtOfEngineerUI\ArtOfEngineerUI\bin\Debug\net8.0\runtimes\linux-x64\lib\netstandard2.0\Tmds.LibC.dll

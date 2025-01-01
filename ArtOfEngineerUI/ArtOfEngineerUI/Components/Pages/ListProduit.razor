@@ -1,51 +1,215 @@
 ﻿@page "/listProduit"
-@using System.Text.Json;
+@using System.Text.Json
 @rendermode InteractiveServer
+@inject Access access
 
 <PageTitle>Counter</PageTitle>
 
-<h1>Liste des Produits</h1>
+<h3>Gestion des Données</h3>
+<button class="btn btn-primary" @onclick="ShowProduits">Produits</button>
+<button class="btn btn-primary" @onclick="ShowMagasigners">Magasigners</button>
+<button class="btn btn-primary" @onclick="ShowClients">Clients</button>
+<button class="btn btn-primary" @onclick="ShowCommandes">Commandes</button>
 
-<!-- Product Table -->
-<table class="table">
-    <thead>
-        <tr>
-            <th>Désignation</th>
-            <th>Quantité</th>
-        </tr>
-    </thead>
-    @if (produits == null)
+@if (showProduits)
+{
+    <h1>Liste des Produits</h1>
+    <!-- Product Table -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Désignation</th>
+                <th>Quantité</th>
+                <th>Prix</th>
+            </tr>
+        </thead>
+        @if (produits == null)
+        {
+            <h1>loading ... </h1>
+        }
+        else
+        {
+            <tbody>
+                @foreach (var produit in produits)
+                {
+                    <tr>
+                        <td>@produit.Designation</td>
+                        <td>@produit.Quantity</td>
+                        <td>@produit.Prix</td>
+                    </tr>
+                }
+            </tbody>
+        }
+    </table>
+}
+
+@if (showMagasigners)
+{
+    <h1>Liste des Employes</h1>
+    <!-- Magasigner Table -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Poste</th>
+                <th>Numéro de Téléphone</th>
+                <th>Horaire</th>
+                <th>Salaire</th>
+            </tr>
+        </thead>
+        @if (magasigners == null)
+        {
+            <h1>loading ... </h1>
+        }
+        else
+        {
+            <tbody>
+                @foreach (var magasigner in magasigners)
+                {
+                    <tr>
+                        <td>@magasigner.Nom</td>
+                        <td>@magasigner.Prenom</td>
+                        <td>@magasigner.Poste</td>
+                        <td>@magasigner.NumTel</td>
+                        <td>@magasigner.Horaire</td>
+                        <td>@magasigner.Salaire</td>
+                    </tr>
+                }
+            </tbody>
+        }
+    </table>
+
+}
+
+@if (showClients)
+{
+    <h1>Liste des Clients</h1>
+    <!-- Client Table -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Numéro de Téléphone</th>
+            </tr>
+        </thead>
+        @if (clients == null)
+        {
+            <h1>loading ... </h1>
+        }
+        else
+        {
+            <tbody>
+                @foreach (var client in clients)
+                {
+                    <tr>
+                        <td>@client.Nom</td>
+                        <td>@client.Prenom</td>
+                        <td>@client.NumTel</td>
+                    </tr>
+                }
+            </tbody>
+        }
+    </table>
+
+}
+
+@if (showCommandes)
+{
+    <h1>Liste des Commandes</h1>
+    <!-- Commande Table -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID Commande</th>
+                <th>ID Client</th>
+                <th>ID Produit</th>
+                <th>Quantité</th>
+                <th>Date Commande</th>
+            </tr>
+        </thead>
+        @if (commandes == null)
+        {
+            <h1>loading ... </h1>
+        }
+        else
+        {
+            <tbody>
+                @foreach (var commande in commandes)
+                {
+                    <tr>
+                        <td>@commande.CommandeId</td>
+                        <td>@commande.ClientId</td>
+                        <td>@commande.ProduitId</td>
+                        <td>@commande.Quantite</td>
+                        <td>@commande.DateCommande</td>
+                    </tr>
+                }
+            </tbody>
+        }
+    </table>
+
+}
+
+@code {
+    private bool showProduits = false, showMagasigners = false, showClients = false, showCommandes = false;
+
+    private void ShowProduits()
     {
-        <h1>loading ... </h1>
+        showProduits = true;
+        showMagasigners = false;
+        showClients = false;
+        showCommandes = false;
     }
-    else
+
+    private void ShowMagasigners()
     {
-        <tbody>
-            @foreach (var produit in produits)
-            {
-                <tr>
-                    <td>@produit.Designation</td>
-                    <td>@produit.Quantity</td>
-                </tr>
-            }
-        </tbody>
+        showProduits = false;
+        showMagasigners = true;
+        showClients = false;
+        showCommandes = false;
     }
-</table>
+
+    private void ShowClients()
+    {
+        showProduits = false;
+        showMagasigners = false;
+        showClients = true;
+        showCommandes = false;
+    }
+
+    private void ShowCommandes()
+    {
+        showProduits = false;
+        showMagasigners = false;
+        showClients = false;
+        showCommandes = true;
+    }
+}
+
 
 @code {
     private List<Produit> produits = null;
-    string api_url = "http://localhost:5041/";
+    private List<Client> clients = null;
+    private List<Magasigner> magasigners = null;
+    private List<Commande> commandes = null;
+    //string api_url = "http://localhost:5041/";
     private async Task refreshlist()
     {
         try
         {
-            HttpClient httpClient = new HttpClient();
+            /*HttpClient httpClient = new HttpClient();
             HttpResponseMessage res = await httpClient.GetAsync(api_url + "api/MagasinApi/produits");
             httpClient.Dispose();
             using var respStream = await res.Content.ReadAsStreamAsync();
             var obj = await JsonSerializer.DeserializeAsync<List<Produit>>(respStream);
             produits = obj;
-            StateHasChanged();
+            StateHasChanged();*/
+            produits = await Task.Run(() => access.GetAllProduits());
+            clients = await Task.Run(() => access.GetAllClients());
+            commandes = await Task.Run(() => access.GetAllCommandes());
+            magasigners = await Task.Run(() => access.GetAllMagasiniers());
         }
         catch
         {

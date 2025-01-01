@@ -3,30 +3,26 @@
   "WorkspaceRootPath": "E:\\stage\\AppMagasin\\ArtOfEngineerUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1AD0825A-8703-4AA8-8674-4707B28FCDDC}|ArtOfEngineerUI\\ArtOfEngineerUI.csproj|e:\\stage\\appmagasin\\artofengineerui\\artofengineerui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1AD0825A-8703-4AA8-8674-4707B28FCDDC}|ArtOfEngineerUI\\ArtOfEngineerUI.csproj|solutionrelative:artofengineerui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1AD0825A-8703-4AA8-8674-4707B28FCDDC}|ArtOfEngineerUI\\ArtOfEngineerUI.csproj|e:\\stage\\appmagasin\\artofengineerui\\artofengineerui\\components\\pages\\listproduit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1AD0825A-8703-4AA8-8674-4707B28FCDDC}|ArtOfEngineerUI\\ArtOfEngineerUI.csproj|solutionrelative:artofengineerui\\components\\pages\\listproduit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1AD0825A-8703-4AA8-8674-4707B28FCDDC}|ArtOfEngineerUI\\ArtOfEngineerUI.csproj|e:\\stage\\appmagasin\\artofengineerui\\artofengineerui\\components\\pages\\depot.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1AD0825A-8703-4AA8-8674-4707B28FCDDC}|ArtOfEngineerUI\\ArtOfEngineerUI.csproj|solutionrelative:artofengineerui\\components\\pages\\depot.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AD0825A-8703-4AA8-8674-4707B28FCDDC}|ArtOfEngineerUI\\ArtOfEngineerUI.csproj|e:\\stage\\appmagasin\\artofengineerui\\artofengineerui\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1AD0825A-8703-4AA8-8674-4707B28FCDDC}|ArtOfEngineerUI\\ArtOfEngineerUI.csproj|solutionrelative:artofengineerui\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1AD0825A-8703-4AA8-8674-4707B28FCDDC}|ArtOfEngineerUI\\ArtOfEngineerUI.csproj|e:\\stage\\appmagasin\\artofengineerui\\artofengineerui\\components\\datafiles\\access.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AD0825A-8703-4AA8-8674-4707B28FCDDC}|ArtOfEngineerUI\\ArtOfEngineerUI.csproj|solutionrelative:artofengineerui\\components\\datafiles\\access.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1AD0825A-8703-4AA8-8674-4707B28FCDDC}|ArtOfEngineerUI\\ArtOfEngineerUI.csproj|e:\\stage\\appmagasin\\artofengineerui\\artofengineerui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1AD0825A-8703-4AA8-8674-4707B28FCDDC}|ArtOfEngineerUI\\ArtOfEngineerUI.csproj|solutionrelative:artofengineerui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\stage\\ArtOfEngineer\\ArtOfEngineer\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FFB173B-D784-4CDB-A8D1-2FAFD5B2BA0B}|..\\ArtOfEngineer\\ArtOfEngineer\\ArtOfEngineer.csproj|e:\\stage\\appmagasin\\artofengineer\\artofengineer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\stage\\ArtOfEngineer\\ArtOfEngineer\\Components\\DataFiles\\Infos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1AD0825A-8703-4AA8-8674-4707B28FCDDC}|ArtOfEngineerUI\\ArtOfEngineerUI.csproj|e:\\stage\\appmagasin\\artofengineerui\\artofengineerui\\components\\pages\\depot.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1AD0825A-8703-4AA8-8674-4707B28FCDDC}|ArtOfEngineerUI\\ArtOfEngineerUI.csproj|solutionrelative:artofengineerui\\components\\pages\\depot.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FFB173B-D784-4CDB-A8D1-2FAFD5B2BA0B}|..\\ArtOfEngineer\\ArtOfEngineer\\ArtOfEngineer.csproj|e:\\stage\\appmagasin\\artofengineer\\artofengineer\\controllers\\magasinapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,93 +32,90 @@
       "DocumentGroups": [
         {
           "DockedWidth": 215,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\stage\\ArtOfEngineer\\ArtOfEngineer\\Program.cs",
-              "RelativeDocumentMoniker": "..\\..\\ArtOfEngineer\\ArtOfEngineer\\Program.cs",
-              "ToolTip": "E:\\stage\\ArtOfEngineer\\ArtOfEngineer\\Program.cs",
-              "RelativeToolTip": "..\\..\\ArtOfEngineer\\ArtOfEngineer\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T09:47:16.701Z"
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\stage\\AppMagasin\\ArtOfEngineerUI\\ArtOfEngineerUI\\Program.cs",
-              "RelativeDocumentMoniker": "ArtOfEngineerUI\\Program.cs",
-              "ToolTip": "E:\\stage\\AppMagasin\\ArtOfEngineerUI\\ArtOfEngineerUI\\Program.cs",
-              "RelativeToolTip": "ArtOfEngineerUI\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T08:18:34.095Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "E:\\stage\\AppMagasin\\ArtOfEngineerUI\\ArtOfEngineerUI\\Components\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "ArtOfEngineerUI\\Components\\Layout\\NavMenu.razor",
-              "ToolTip": "E:\\stage\\AppMagasin\\ArtOfEngineerUI\\ArtOfEngineerUI\\Components\\Layout\\NavMenu.razor",
-              "RelativeToolTip": "ArtOfEngineerUI\\Components\\Layout\\NavMenu.razor",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABcAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-31T08:21:55.031Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Infos.cs",
-              "DocumentMoniker": "E:\\stage\\ArtOfEngineer\\ArtOfEngineer\\Components\\DataFiles\\Infos.cs",
-              "RelativeDocumentMoniker": "..\\..\\ArtOfEngineer\\ArtOfEngineer\\Components\\DataFiles\\Infos.cs",
-              "ToolTip": "E:\\stage\\ArtOfEngineer\\ArtOfEngineer\\Components\\DataFiles\\Infos.cs",
-              "RelativeToolTip": "..\\..\\ArtOfEngineer\\ArtOfEngineer\\Components\\DataFiles\\Infos.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T18:11:19.162Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Depot.razor",
-              "DocumentMoniker": "E:\\stage\\AppMagasin\\ArtOfEngineerUI\\ArtOfEngineerUI\\Components\\Pages\\Depot.razor",
-              "RelativeDocumentMoniker": "ArtOfEngineerUI\\Components\\Pages\\Depot.razor",
-              "ToolTip": "E:\\stage\\AppMagasin\\ArtOfEngineerUI\\ArtOfEngineerUI\\Components\\Pages\\Depot.razor",
-              "RelativeToolTip": "ArtOfEngineerUI\\Components\\Pages\\Depot.razor",
-              "ViewState": "AQIAAIIAAAAAAAAAAAAtwIsAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-30T13:04:21.093Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Home.razor",
-              "DocumentMoniker": "E:\\stage\\AppMagasin\\ArtOfEngineerUI\\ArtOfEngineerUI\\Components\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "ArtOfEngineerUI\\Components\\Pages\\Home.razor",
-              "ToolTip": "E:\\stage\\AppMagasin\\ArtOfEngineerUI\\ArtOfEngineerUI\\Components\\Pages\\Home.razor",
-              "RelativeToolTip": "ArtOfEngineerUI\\Components\\Pages\\Home.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-30T18:17:49.129Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Access.cs",
+              "DocumentMoniker": "E:\\stage\\AppMagasin\\ArtOfEngineerUI\\ArtOfEngineerUI\\Components\\Datafiles\\Access.cs",
+              "RelativeDocumentMoniker": "ArtOfEngineerUI\\Components\\Datafiles\\Access.cs",
+              "ToolTip": "E:\\stage\\AppMagasin\\ArtOfEngineerUI\\ArtOfEngineerUI\\Components\\Datafiles\\Access.cs",
+              "RelativeToolTip": "ArtOfEngineerUI\\Components\\Datafiles\\Access.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAADwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T19:44:35.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ListProduit.razor",
               "DocumentMoniker": "E:\\stage\\AppMagasin\\ArtOfEngineerUI\\ArtOfEngineerUI\\Components\\Pages\\ListProduit.razor",
               "RelativeDocumentMoniker": "ArtOfEngineerUI\\Components\\Pages\\ListProduit.razor",
               "ToolTip": "E:\\stage\\AppMagasin\\ArtOfEngineerUI\\ArtOfEngineerUI\\Components\\Pages\\ListProduit.razor",
               "RelativeToolTip": "ArtOfEngineerUI\\Components\\Pages\\ListProduit.razor",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACsAAAAhAAAA",
+              "ViewState": "AQIAANYAAAAAAAAAAAAqwCoAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-30T13:04:17.642Z",
+              "WhenOpened": "2025-01-01T19:39:12.793Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\stage\\AppMagasin\\ArtOfEngineer\\ArtOfEngineer\\Program.cs",
+              "RelativeDocumentMoniker": "..\\ArtOfEngineer\\ArtOfEngineer\\Program.cs",
+              "ToolTip": "E:\\stage\\AppMagasin\\ArtOfEngineer\\ArtOfEngineer\\Program.cs",
+              "RelativeToolTip": "..\\ArtOfEngineer\\ArtOfEngineer\\Program.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAswCIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T15:48:42.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MagasinApiController.cs",
+              "DocumentMoniker": "E:\\stage\\AppMagasin\\ArtOfEngineer\\ArtOfEngineer\\Controllers\\MagasinApiController.cs",
+              "RelativeDocumentMoniker": "..\\ArtOfEngineer\\ArtOfEngineer\\Controllers\\MagasinApiController.cs",
+              "ToolTip": "E:\\stage\\AppMagasin\\ArtOfEngineer\\ArtOfEngineer\\Controllers\\MagasinApiController.cs",
+              "RelativeToolTip": "..\\ArtOfEngineer\\ArtOfEngineer\\Controllers\\MagasinApiController.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T13:47:06.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\stage\\AppMagasin\\ArtOfEngineerUI\\ArtOfEngineerUI\\Program.cs",
+              "RelativeDocumentMoniker": "ArtOfEngineerUI\\Program.cs",
+              "ToolTip": "E:\\stage\\AppMagasin\\ArtOfEngineerUI\\ArtOfEngineerUI\\Program.cs",
+              "RelativeToolTip": "ArtOfEngineerUI\\Program.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAswBgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T13:28:54.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Depot.razor",
+              "DocumentMoniker": "E:\\stage\\AppMagasin\\ArtOfEngineerUI\\ArtOfEngineerUI\\Components\\Pages\\Depot.razor",
+              "RelativeDocumentMoniker": "ArtOfEngineerUI\\Components\\Pages\\Depot.razor",
+              "ToolTip": "E:\\stage\\AppMagasin\\ArtOfEngineerUI\\ArtOfEngineerUI\\Components\\Pages\\Depot.razor",
+              "RelativeToolTip": "ArtOfEngineerUI\\Components\\Pages\\Depot.razor",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAkwGsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T13:04:21.093Z"
             }
           ]
         }

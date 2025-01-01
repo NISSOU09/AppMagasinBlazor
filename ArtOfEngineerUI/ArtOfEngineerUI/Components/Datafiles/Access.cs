@@ -12,7 +12,7 @@ namespace ArtOfEngineerUI.Components.Datafiles
 {
     public class Access
     {
-        string ConnectionStr = @"Data Source=DESKTOP-DST2S57\SQLEXPRESS;Initial Catalog = Magasin; Integrated Security = True";
+        string ConnectionStr = @"Data Source=DESKTOP-DST2S57\SQLEXPRESS;Initial Catalog=Magasin;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
         public (string[] Designations, double[] Ventes) GetProduitsAvecVentes()
         {
             var designations = new List<string>();

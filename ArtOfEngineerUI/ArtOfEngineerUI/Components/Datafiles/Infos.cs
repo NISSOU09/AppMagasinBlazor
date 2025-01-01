@@ -6,13 +6,6 @@ using System.Threading.Tasks;
 
 namespace ArtOfEngineerUI.Components.Datafiles
 {
-    public class Produit
-    {
-        public int ProduitId { get; set; }
-        public string Designation { get; set; } = string.Empty;
-        public int Quantity { get; set; }
-        public decimal Prix { get; set; }
-    }
 
     public class Stat
     {
@@ -20,6 +13,13 @@ namespace ArtOfEngineerUI.Components.Datafiles
         public int ProduitId { get; set; }
         public double Vente { get; set; }
         public DateTime DateVente { get; set; }
+    }
+    public class Produit
+    {
+        public int ProduitId { get; set; }
+        public string Designation { get; set; } = string.Empty;
+        public int Quantity { get; set; }
+        public decimal Prix { get; set; }
     }
 
     public class Magasigner
