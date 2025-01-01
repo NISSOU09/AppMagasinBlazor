@@ -1,0 +1,59 @@
+﻿@page "/listProduit"
+@using System.Text.Json;
+@rendermode InteractiveServer
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Liste des Produits</h1>
+
+<!-- Product Table -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Désignation</th>
+            <th>Quantité</th>
+        </tr>
+    </thead>
+    @if (produits == null)
+    {
+        <h1>loading ... </h1>
+    }
+    else
+    {
+        <tbody>
+            @foreach (var produit in produits)
+            {
+                <tr>
+                    <td>@produit.Designation</td>
+                    <td>@produit.Quantity</td>
+                </tr>
+            }
+        </tbody>
+    }
+</table>
+
+@code {
+    private List<Produit> produits = null;
+    string api_url = "http://localhost:5041/";
+    private async Task refreshlist()
+    {
+        try
+        {
+            HttpClient httpClient = new HttpClient();
+            HttpResponseMessage res = await httpClient.GetAsync(api_url + "api/MagasinApi/produits");
+            httpClient.Dispose();
+            using var respStream = await res.Content.ReadAsStreamAsync();
+            var obj = await JsonSerializer.DeserializeAsync<List<Produit>>(respStream);
+            produits = obj;
+            StateHasChanged();
+        }
+        catch
+        {
+            
+        }
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        await this.refreshlist();
+    }
+}

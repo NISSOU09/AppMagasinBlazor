@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtOfEngineerUI", "ArtOfEngineerUI\ArtOfEngineerUI.csproj", "{1AD0825A-8703-4AA8-8674-4707B28FCDDC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArtOfEngineer", "..\ArtOfEngineer\ArtOfEngineer\ArtOfEngineer.csproj", "{9FFB173B-D784-4CDB-A8D1-2FAFD5B2BA0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AD0825A-8703-4AA8-8674-4707B28FCDDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AD0825A-8703-4AA8-8674-4707B28FCDDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AD0825A-8703-4AA8-8674-4707B28FCDDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AD0825A-8703-4AA8-8674-4707B28FCDDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FFB173B-D784-4CDB-A8D1-2FAFD5B2BA0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FFB173B-D784-4CDB-A8D1-2FAFD5B2BA0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FFB173B-D784-4CDB-A8D1-2FAFD5B2BA0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FFB173B-D784-4CDB-A8D1-2FAFD5B2BA0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36A9D9E5-E38E-40A4-B292-B63740A06D5A}
+	EndGlobalSection
+EndGlobal

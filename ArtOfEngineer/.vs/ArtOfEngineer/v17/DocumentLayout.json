@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\stage\\ArtOfEngineer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4C782A2D-EB94-4CCB-9CA7-1A43206BED0D}|ArtOfEngineer\\ArtOfEngineer.csproj|e:\\stage\\artofengineer\\artofengineer\\controllers\\magasinapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C782A2D-EB94-4CCB-9CA7-1A43206BED0D}|ArtOfEngineer\\ArtOfEngineer.csproj|solutionrelative:artofengineer\\controllers\\magasinapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C782A2D-EB94-4CCB-9CA7-1A43206BED0D}|ArtOfEngineer\\ArtOfEngineer.csproj|e:\\stage\\artofengineer\\artofengineer\\artofengineer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4C782A2D-EB94-4CCB-9CA7-1A43206BED0D}|ArtOfEngineer\\ArtOfEngineer.csproj|solutionrelative:artofengineer\\artofengineer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C782A2D-EB94-4CCB-9CA7-1A43206BED0D}|ArtOfEngineer\\ArtOfEngineer.csproj|e:\\stage\\artofengineer\\artofengineer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C782A2D-EB94-4CCB-9CA7-1A43206BED0D}|ArtOfEngineer\\ArtOfEngineer.csproj|solutionrelative:artofengineer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C782A2D-EB94-4CCB-9CA7-1A43206BED0D}|ArtOfEngineer\\ArtOfEngineer.csproj|e:\\stage\\artofengineer\\artofengineer\\components\\datafiles\\access.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C782A2D-EB94-4CCB-9CA7-1A43206BED0D}|ArtOfEngineer\\ArtOfEngineer.csproj|solutionrelative:artofengineer\\components\\datafiles\\access.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C782A2D-EB94-4CCB-9CA7-1A43206BED0D}|ArtOfEngineer\\ArtOfEngineer.csproj|e:\\stage\\artofengineer\\artofengineer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4C782A2D-EB94-4CCB-9CA7-1A43206BED0D}|ArtOfEngineer\\ArtOfEngineer.csproj|solutionrelative:artofengineer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C782A2D-EB94-4CCB-9CA7-1A43206BED0D}|ArtOfEngineer\\ArtOfEngineer.csproj|e:\\stage\\artofengineer\\artofengineer\\components\\datafiles\\infos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C782A2D-EB94-4CCB-9CA7-1A43206BED0D}|ArtOfEngineer\\ArtOfEngineer.csproj|solutionrelative:artofengineer\\components\\datafiles\\infos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Infos.cs",
+              "DocumentMoniker": "E:\\stage\\ArtOfEngineer\\ArtOfEngineer\\Components\\DataFiles\\Infos.cs",
+              "RelativeDocumentMoniker": "ArtOfEngineer\\Components\\DataFiles\\Infos.cs",
+              "ToolTip": "E:\\stage\\ArtOfEngineer\\ArtOfEngineer\\Components\\DataFiles\\Infos.cs",
+              "RelativeToolTip": "ArtOfEngineer\\Components\\DataFiles\\Infos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T11:02:01.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Access.cs",
+              "DocumentMoniker": "E:\\stage\\ArtOfEngineer\\ArtOfEngineer\\Components\\DataFiles\\Access.cs",
+              "RelativeDocumentMoniker": "ArtOfEngineer\\Components\\DataFiles\\Access.cs",
+              "ToolTip": "E:\\stage\\ArtOfEngineer\\ArtOfEngineer\\Components\\DataFiles\\Access.cs",
+              "RelativeToolTip": "ArtOfEngineer\\Components\\DataFiles\\Access.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T10:58:57.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MagasinApiController.cs",
+              "DocumentMoniker": "E:\\stage\\ArtOfEngineer\\ArtOfEngineer\\Controllers\\MagasinApiController.cs",
+              "RelativeDocumentMoniker": "ArtOfEngineer\\Controllers\\MagasinApiController.cs",
+              "ToolTip": "E:\\stage\\ArtOfEngineer\\ArtOfEngineer\\Controllers\\MagasinApiController.cs",
+              "RelativeToolTip": "ArtOfEngineer\\Controllers\\MagasinApiController.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAAAG4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T10:55:23.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\stage\\ArtOfEngineer\\ArtOfEngineer\\Program.cs",
+              "RelativeDocumentMoniker": "ArtOfEngineer\\Program.cs",
+              "ToolTip": "E:\\stage\\ArtOfEngineer\\ArtOfEngineer\\Program.cs",
+              "RelativeToolTip": "ArtOfEngineer\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T10:08:16.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\stage\\ArtOfEngineer\\ArtOfEngineer\\appsettings.json",
+              "RelativeDocumentMoniker": "ArtOfEngineer\\appsettings.json",
+              "ToolTip": "E:\\stage\\ArtOfEngineer\\ArtOfEngineer\\appsettings.json",
+              "RelativeToolTip": "ArtOfEngineer\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-29T10:43:36.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ArtOfEngineer.csproj",
+              "DocumentMoniker": "E:\\stage\\ArtOfEngineer\\ArtOfEngineer\\ArtOfEngineer.csproj",
+              "RelativeDocumentMoniker": "ArtOfEngineer\\ArtOfEngineer.csproj",
+              "ToolTip": "E:\\stage\\ArtOfEngineer\\ArtOfEngineer\\ArtOfEngineer.csproj",
+              "RelativeToolTip": "ArtOfEngineer\\ArtOfEngineer.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-29T10:23:56.296Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\stage\\AppMagasin\\ArtOfEngineerUI\\ArtOfEngineerUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ArtOfEngineerUI.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ArtOfEngineerUI.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\stage\\AppMagasin\\ArtOfEngineerUI\\ArtOfEngineerUI\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "E:\\stage\\AppMagasin\\ArtOfEngineerUI\\ArtOfEngineerUI\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\stage\\AppMagasin\\ArtOfEngineerUI\\ArtOfEngineerUI\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\stage\\AppMagasin\\ArtOfEngineerUI\\ArtOfEngineerUI\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ArtOfEngineerUI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ArtOfEngineerUI.props",
+      "PackagePath": "build\\ArtOfEngineerUI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ArtOfEngineerUI.props",
+      "PackagePath": "buildMultiTargeting\\ArtOfEngineerUI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ArtOfEngineerUI.props",
+      "PackagePath": "buildTransitive\\ArtOfEngineerUI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,217 @@
+﻿@page "/depot"
+@using System.Text.Json;
+@using Newtonsoft.Json.Converters;
+@using System.Net.Http;
+@using System.Text
+
+@rendermode InteractiveServer
+
+<PageTitle>Weather</PageTitle>
+
+<h1>Depot</h1>
+
+<button class="btn btn-primary" onclick="@showFournisseurFunc">fournisseur</button>
+<button class="btn btn-primary" onclick="@showStockFunc">stock</button>
+
+@if (showFournisseur == false && showStock == false)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    @if (showStock)
+    {
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>
+                        <input type="checkbox" @onchange="ToggleSelectAll" /> <!-- Sélectionner tout -->
+                    </th>
+                    <th>Désignation</th>
+                    <th>Quantité</th>
+                    <th>Prix</th>
+                </tr>
+            </thead>
+            @if (produits == null || !produits.Any())
+            {
+                <tbody>
+                    <tr>
+                        <td colspan="4" class="text-center">Chargement ou aucun produit disponible...</td>
+                    </tr>
+                </tbody>
+            }
+            else
+            {
+                <tbody>
+                    @foreach (var produit in produits)
+                    {
+                        <tr>
+                            <td>
+                                <input type="checkbox" @bind="@produit.IsSelected" />
+                            </td>
+                            <td>@produit.nom</td>
+                            <td>@produit.qte</td>
+                            <td>@produit.prix</td>
+                        </tr>
+                    }
+                </tbody>
+            }
+        </table>
+
+        <button class="btn btn-primary mt-3" @onclick="HandleSelectedProducts">Valider la sélection</button>
+        @foreach (var prod in selectedProducts)
+        {
+            @prod.nom;
+            <br />
+        }
+
+}
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>nom</th>
+                    <th>adress</th>
+                    <th>produit disponible</th>
+                </tr>
+            </thead>
+            @if (fournisseurs == null)
+            {
+                <h1>loading ... </h1>
+            }
+            else
+            {
+                <tbody>
+                    @foreach (var client in fournisseurs)
+                    {
+                        <tr>
+                            <td>@client.nom_f</td>
+                            <td>@client.adresse_f</td>
+                            <td>@client.prod_dispo</td>
+                        </tr>
+                    }
+                </tbody>
+            }
+        </table>
+    }
+}
+
+@code {
+    private bool showFournisseur = false, showStock = false;
+    private List<ProduitDepo> produits = new();
+    private List<ProduitDepotsss> selectedProducts = new();
+    private List<Fournissuer> fournisseurs = new();
+    string api_url = "http://192.168.130.37:8000/";
+
+
+    void showFournisseurFunc()
+    {
+        showFournisseur = !showFournisseur;
+        showStock = false;
+    }
+
+    void showStockFunc()
+    {
+        showFournisseur = false;
+        showStock = !showStock;
+    }
+
+    private async Task refreshlists()
+    {
+        try
+        {
+            using var httpClient = new HttpClient();
+
+            // Fetch products
+            HttpResponseMessage resproduit = await httpClient.GetAsync(api_url + "api/shop_produit");
+            if (resproduit.IsSuccessStatusCode)
+            {
+                var respStream = await resproduit.Content.ReadAsStreamAsync();
+                produits = await JsonSerializer.DeserializeAsync<List<ProduitDepo>>(respStream) ?? new List<ProduitDepo>();
+            }
+
+            // Fetch fournisseurs
+            HttpResponseMessage resclient = await httpClient.GetAsync(api_url + "api/shop_fournisseur");
+            if (resclient.IsSuccessStatusCode)
+            {
+                var respStreamclient = await resclient.Content.ReadAsStreamAsync();
+                fournisseurs = await JsonSerializer.DeserializeAsync<List<Fournissuer>>(respStreamclient) ?? new List<Fournissuer>();
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error fetching data: {ex.Message}");
+        }
+    }
+    // Gérer les produits sélectionnés
+    private void HandleSelectedProducts()
+    {
+        selectedProducts = produits
+    .Where(p => p.IsSelected) // Filter selected products
+    .Select(p => new ProduitDepotsss // Map to ProduitDepotsss
+        {
+            qte = p.qte,
+            nom = p.nom
+        })
+    .ToList();
+        AddProducts();
+
+        // Logique pour les produits sélectionnés
+    }
+
+
+    private async Task AddProducts()
+    {
+        var jsonpass = JsonSerializer.Serialize(selectedProducts);
+        HttpContent content = new StringContent(jsonpass, Encoding.UTF8, "application/json");
+
+
+        using var httpClient = new HttpClient();
+        
+        // Fetch products
+        HttpResponseMessage resproduit = await httpClient.PostAsync(api_url + "api/ajouterDemande_shop", content);
+        if (resproduit.IsSuccessStatusCode)
+        {
+            var respStream = await resproduit.Content.ReadAsStreamAsync();
+        }
+    }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        await refreshlists();
+    }
+
+    private class Fournissuer
+    {
+        public string? nom_f { get; set; }
+        public string? adresse_f { get; set; }
+        public string? prod_dispo { get; set; }
+    }
+
+    private class ProduitDepo
+    {
+        public string nom { get; set; }
+        public int qte { get; set; }
+        public string prix { get; set; }
+        public bool IsSelected { get; set; } // Propriété pour savoir si le produit est sélectionné
+    }
+    private class ProduitDepotsss
+    {
+        public int qte { get; set; }
+        public string nom { get; set; }
+    }
+    private void ToggleSelectAll(ChangeEventArgs e)
+    {
+        bool isSelected = (bool)e.Value;
+        foreach (var produit in produits)
+        {
+            produit.IsSelected = isSelected;
+        }
+    }
+}
+
+
+
+
