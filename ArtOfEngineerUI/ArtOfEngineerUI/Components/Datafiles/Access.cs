@@ -13,6 +13,21 @@ namespace ArtOfEngineerUI.Components.Datafiles
     public class Access
     {
         string ConnectionStr = @"Data Source=DESKTOP-DST2S57\SQLEXPRESS;Initial Catalog=Magasin;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
+        public void AddLog(string contenue, string status, string typelog)
+        {
+            using (SqlConnection conn = new SqlConnection(ConnectionStr))
+            {
+                SqlCommand cmd = new SqlCommand("spAddLog", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@contenu", contenue);
+                cmd.Parameters.AddWithValue("@statuslog", status);
+                cmd.Parameters.AddWithValue("@typelog", typelog);
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+        }
+
         public (string[] Designations, double[] Ventes) GetProduitsAvecVentes()
         {
             var designations = new List<string>();

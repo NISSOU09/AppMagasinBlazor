@@ -1,5 +1,6 @@
 using ArtOfEngineerUI.Components;
 using ArtOfEngineerUI.Components.Datafiles;
+using ArtOfEngineer.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 builder.Services.AddScoped<Access>();
+builder.Services.AddScoped<MagasinApiController>();
 
 var app = builder.Build();
 

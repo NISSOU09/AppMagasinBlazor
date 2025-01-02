@@ -1,6 +1,29 @@
 ﻿@page "/"
+@using ArtOfEngineer.Controllers
+@rendermode InteractiveServer
 
 <PageTitle>Home</PageTitle>
 
 <h1>Hello, world!</h1>
+<button class="btncolor" @onclick="func">accept</button>
 
+
+@code{
+    string color = "red";
+    void func(){
+        /*MagasinApiController.requestAccept = !MagasinApiController.requestAccept;
+        if (MagasinApiController.requestAccept)
+        {
+            color = "green";
+        }
+        else
+        {
+            color = "red";
+        }*/
+    }
+}
+<style>
+        .btncolor{
+        background-color: @color;
+        }
+</style>

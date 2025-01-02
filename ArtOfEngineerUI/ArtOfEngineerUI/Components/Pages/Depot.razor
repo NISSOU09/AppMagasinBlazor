@@ -3,6 +3,7 @@
 @using Newtonsoft.Json.Converters;
 @using System.Net.Http;
 @using System.Text
+@inject Access acc
 
 @rendermode InteractiveServer
 
@@ -102,8 +103,8 @@ else
     private List<ProduitDepo> produits = new();
     private List<ProduitDepotsss> selectedProducts = new();
     private List<Fournissuer> fournisseurs = new();
-    //string api_url = "http://192.168.130.37:8000/";
-    string api_url = "http://DESKTOP-9JPBRQ4:8000/";
+    string api_url = "http://192.168.130.37:8000/";
+    //string api_url = "http://DESKTOP-9JPBRQ4:8000/";
 
 
 
@@ -131,6 +132,7 @@ else
             {
                 var respStream = await resproduit.Content.ReadAsStreamAsync();
                 produits = await JsonSerializer.DeserializeAsync<List<ProduitDepo>>(respStream) ?? new List<ProduitDepo>();
+                await Task.Run(()=>acc.AddLog(JsonSerializer.DeserializeAsync<List<ProduitDepo>>(respStream).ToString(), resproduit.IsSuccessStatusCode.ToString(), "GET"));
             }
 
             // Fetch fournisseurs
@@ -139,6 +141,7 @@ else
             {
                 var respStreamclient = await resclient.Content.ReadAsStreamAsync();
                 fournisseurs = await JsonSerializer.DeserializeAsync<List<Fournissuer>>(respStreamclient) ?? new List<Fournissuer>();
+                await Task.Run(()=>acc.AddLog(JsonSerializer.DeserializeAsync<List<ProduitDepo>>(respStreamclient).ToString(), resproduit.IsSuccessStatusCode.ToString(), "GET"));
             }
         }
         catch (Exception ex)
@@ -170,7 +173,7 @@ else
 
 
         using var httpClient = new HttpClient();
-        
+        Console.WriteLine(jsonpass);
         // Fetch products
         HttpResponseMessage resproduit = await httpClient.PostAsync(api_url + "api/ajouterDemande_shop", content);
         if (resproduit.IsSuccessStatusCode)

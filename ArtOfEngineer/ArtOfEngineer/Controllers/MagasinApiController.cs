@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using System.Data;
+using System.Net.Http;
 
 
 namespace ArtOfEngineer.Controllers
@@ -11,6 +12,22 @@ namespace ArtOfEngineer.Controllers
     [ApiController]
     public class MagasinApiController : ControllerBase
     {
+        public void AddLog(string contenue, string status, string typelog)
+        {
+            string dataSource = _configuration.GetConnectionString("magasinDB");
+            using (SqlConnection conn = new SqlConnection(dataSource))
+            {
+                SqlCommand cmd = new SqlCommand("spAddLog", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@contenu", contenue);
+                cmd.Parameters.AddWithValue("@statuslog", status);
+                cmd.Parameters.AddWithValue("@typelog", typelog);
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+        }
+
         private IConfiguration _configuration;
         public MagasinApiController(IConfiguration configuration)
         {
@@ -20,23 +37,34 @@ namespace ArtOfEngineer.Controllers
         [Route("produits")]
         public JsonResult GetProduit()
         {
-            string querry = "SELECT Designation, Quantity FROM dbo.Produit WHERE Quantity<20";
+            string query = "SELECT Designation, Quantity FROM dbo.Produit WHERE Quantity < 20";
             DataTable table = new DataTable();
             string dataSource = _configuration.GetConnectionString("magasinDB");
             SqlDataReader reader;
-            using (var connection = new SqlConnection(dataSource))
+            try
             {
-                connection.Open();
-                using (var mycmd = new SqlCommand(querry,connection))
+                using (var connection = new SqlConnection(dataSource))
                 {
-                    reader = mycmd.ExecuteReader();
-                    table.Load(reader);
-                    reader.Close();
-                    connection.Close();
+                    connection.Open();
+                    using (var mycmd = new SqlCommand(query, connection))
+                    {
+                        reader = mycmd.ExecuteReader();
+                        table.Load(reader);
+                        reader.Close();
+                    }
                 }
+                string logContent = $"Data retrieved: {string.Join(", ", table.Rows.Cast<DataRow>().Select(row => $"{row["Designation"]} ({row["Quantity"]})"))}";
+                AddLog(logContent, "Success", "GEt");
+
+                return new JsonResult(table);
             }
-            return new JsonResult(table);
+            catch (Exception ex)
+            {
+                AddLog(ex.Message, "Error", "GEt");
+                return new JsonResult(new { error = ex.Message });
+            }
         }
+
         [HttpGet]
         [Route("stats")]
         public JsonResult GetStats()
@@ -74,13 +102,12 @@ namespace ArtOfEngineer.Controllers
                 connection.Open();
                 using (var mycmd = new SqlCommand(query, connection))
                 {
-                    // Add parameters to prevent SQL injection
                     mycmd.Parameters.AddWithValue("@ProduitId", newProduit.ProduitId);
                     mycmd.Parameters.AddWithValue("@Designation", newProduit.Designation);
                     mycmd.Parameters.AddWithValue("@Quantity", newProduit.Quantity);
                     mycmd.Parameters.AddWithValue("@Prix", newProduit.Prix);
 
-                    mycmd.ExecuteNonQuery(); // Execute the query
+                    mycmd.ExecuteNonQuery(); 
                 }
             }
             return new JsonResult("Produit ajouté avec succès");
@@ -99,10 +126,9 @@ namespace ArtOfEngineer.Controllers
                 connection.Open();
                 using (var mycmd = new SqlCommand(query, connection))
                 {
-                    // Add parameters to prevent SQL injection
                     mycmd.Parameters.AddWithValue("@id", IDProduit);
 
-                    mycmd.ExecuteNonQuery(); // Execute the query
+                    mycmd.ExecuteNonQuery();
                 }
             }
 
